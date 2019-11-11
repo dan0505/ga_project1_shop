@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: shopper_production
+  database: postgresql-tapered-26678
   username: shopper
   password: <%= ENV['SHOPPER_DATABASE_PASSWORD'] %>
