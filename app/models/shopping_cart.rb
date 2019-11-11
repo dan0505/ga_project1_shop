@@ -8,7 +8,7 @@ class ShoppingCart
 
   def order
     # if @order is nill, create or find token
-    @order ||= Order.find_or_create_by(token: @token) do |order|
+    @order ||= Order.find_or_create_by(token: @token, status: 'cart') do |order|
       order.sub_total = 0
     end
   end
