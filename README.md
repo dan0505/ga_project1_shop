@@ -1,40 +1,24 @@
-# ga_project1_shop
-This is Project #1 for GA, using Rails to build a online shop
+# README
 
-# Shopper
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-- Product
-    - Categories
-    - Variations
+Things you may want to cover:
 
-- Category
-    - Products
+* Ruby version
 
-- Order
-    - Order Items
+* System dependencies
 
-- Order Items
-    - Products
+* Configuration
 
-## Models
+* Database creation
 
-- Product
-    - Title
-    - Description
-    - Price
+* Database initialization
 
-- ProductVariant
-    - Title
-    - Price
+* How to run the test suite
 
-- Category
-    - Title
+* Services (job queues, cache servers, search engines, etc.)
 
-- Order
-    - First Name
-    - Last Name
-    - Sub Total
+* Deployment instructions
 
-- Order Item
-    - Quantity
-    - Price
+* ...
