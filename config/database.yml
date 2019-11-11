@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: shopper_development
+  database: postgresql-tapered-26678
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
