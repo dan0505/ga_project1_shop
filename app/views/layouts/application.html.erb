@@ -10,6 +10,11 @@
   </head>
 
   <body>
+    <%= link_to "Home", root_path %> |
+    <%= link_to pluralize(current_cart.items_count, 'item'), cart_path %>
+    <%= number_to_currency current_cart.sub_total %>
+
+    <hr />
     <%= yield %>
   </body>
 </html>
