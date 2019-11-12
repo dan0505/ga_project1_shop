@@ -1,0 +1,12 @@
+<h2>Here are all orders</h2>
+<ol>
+  <% @all_orders.each do |order| %>
+    <li>
+      <%= order.id %>
+      <%= order.first_name %>
+      <%= order.first_name %>
+      <%= order.status %>
+    </li>
+    
+  <% end %>
+</ol>

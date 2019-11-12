@@ -15,6 +15,14 @@ class OrdersController < ApplicationController
     end
   end
 
+  def index
+    if current_user && current_user.admin?
+      @all_orders = Order.all
+    else
+      render html: 'sorry you are not admin'
+    end
+  end
+
   private
 
   def order_params
