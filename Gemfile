@@ -34,6 +34,9 @@ gem 'jbuilder', '~> 2.5'
 # use faker to seed
 gem 'faker'
 
+# Use ActiveModel has_secure_password
+gem 'bcrypt'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 

@@ -12,7 +12,16 @@
   <body>
     <%= link_to "Home", root_path %> |
     <%= link_to pluralize(current_cart.items_count, 'item'), cart_path %>
-    <%= number_to_currency current_cart.sub_total %>
+    <%= number_to_currency current_cart.sub_total %> |
+
+    <% if current_user %>
+      Logged in as <%= current_user.email %>.
+      <%= link_to 'Log Out', logout_path %>
+    <% else %>
+      <%= link_to 'Sign Up', signup_path %> or 
+      <%= link_to 'Log In', login_path %>
+    <% end %>
+    
 
     <hr />
     <%= yield %>
